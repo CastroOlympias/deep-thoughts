@@ -20,25 +20,25 @@ first MERN application
 ## Installation
 Install in your terminal:
   <br>
-* npm install dotenv
+* npm i apollo-server-express graphql, fun this from the server directroy, from the root of your project
   <br>
-* npm install express
+* 
   <br>
-* npm install Node.js
+* 
   <br>
-* npm install sequelize
+* 
   <br>
-* npm install npm install --save mysql2
+* 
   <br>
-* npm install express-handlebars
+* 
   <br>
-* npm install express-session
+* 
   <br>
-* npm install bcrypt
+* 
   <br>
-* npm install uuid
+* 
   <br>
-* JQuery widget - calendar pop up
+* 
   <br>
 
 Software download
@@ -46,7 +46,7 @@ Software download
   <br>
 
 ## Usage
-Just signup and start creating your shows and interact with other artists, or your Fans.
+* To start the server in your CLI enter `npm run watch`
 
 
 ## Authors
