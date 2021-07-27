@@ -49,13 +49,49 @@ Software download
 * To start the server in your CLI enter `npm run watch`
 * In your URL, go to `localhost:3001/grapchql` to acess your Playground interface
 
-* Input: `query {
-  helloWorld
-}`
+* `query {
+  # get all users
+  users {
+    username
+    email
+  }
 
-* Output: `{
-  "data": {
-    "helloWorld": "Hello world!"
+  # get a single user by username (use a username from your database)
+  user(username: "Cordell51") {
+    username
+    email
+    friendCount
+    thoughts {
+      thoughtText
+    }
+    friends {
+      username
+    }
+  }
+
+  # query all thoughts
+  thoughts {
+    _id
+    username
+    thoughtText
+    reactions {
+      _id
+      createdAt
+      username
+      reactionBody
+    }
+  }
+
+  # query a single thought (use an _id from a thought in your database)
+  thought(_id: "60ff3ef98077b52cb8e0d59f") {
+    _id
+    username
+    thoughtText
+    createdAt
+    reactions {
+      username
+      reactionBody
+    }
   }
 }`
 
