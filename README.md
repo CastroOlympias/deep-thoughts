@@ -47,6 +47,17 @@ Software download
 
 ## Usage
 * To start the server in your CLI enter `npm run watch`
+* In your URL, go to `localhost:3001/grapchql` to acess your Playground interface
+
+* Input: `query {
+  helloWorld
+}`
+
+* Output: `{
+  "data": {
+    "helloWorld": "Hello world!"
+  }
+}`
 
 
 ## Authors
