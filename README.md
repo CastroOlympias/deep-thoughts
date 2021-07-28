@@ -22,7 +22,7 @@ Install in your terminal:
   <br>
 * npm i apollo-server-express graphql, fun this from the server directroy, from the root of your project
   <br>
-* 
+* npm install jsonwebtoken
   <br>
 * 
   <br>
@@ -48,52 +48,6 @@ Software download
 ## Usage
 * To start the server in your CLI enter `npm run watch`
 * In your URL, go to `localhost:3001/grapchql` to acess your Playground interface
-
-* `query {
-  # get all users
-  users {
-    username
-    email
-  }
-
-  # get a single user by username (use a username from your database)
-  user(username: "Cordell51") {
-    username
-    email
-    friendCount
-    thoughts {
-      thoughtText
-    }
-    friends {
-      username
-    }
-  }
-
-  # query all thoughts
-  thoughts {
-    _id
-    username
-    thoughtText
-    reactions {
-      _id
-      createdAt
-      username
-      reactionBody
-    }
-  }
-
-  # query a single thought (use an _id from a thought in your database)
-  thought(_id: "60ff3ef98077b52cb8e0d59f") {
-    _id
-    username
-    thoughtText
-    createdAt
-    reactions {
-      username
-      reactionBody
-    }
-  }
-}`
 
 
 ## Authors
