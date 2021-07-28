@@ -20,7 +20,7 @@ first MERN application
 ## Installation
 Install in your terminal:
   <br>
-* `Server side install: npm i apollo-server-express graphql`, fun this from the server directroy, from the root of your project
+* Server side install: npm i apollo-server-express graphql`
   <br>
 * Server side install: `npm install jsonwebtoken`
   <br>
