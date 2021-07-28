@@ -47,6 +47,7 @@ Software download
 
 ## Usage
 * To start the server in your CLI enter `npm run watch`
+* To start the cilent in your CLI enter `npm run start`
 * In your URL, go to `localhost:3001/grapchql` to acess your Playground interface
 * 
 
