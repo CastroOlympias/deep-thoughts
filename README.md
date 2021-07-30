@@ -64,7 +64,7 @@ The install script is interesting, as it's already a built-in script that works 
 
 Last, we have the seed script, which will navigate to the server directory and seed the database using the npm run seed command. This will be useful if we ever want to seed the database in a production environment, which we'll touch on later.
 
-Your application will work regardless, but it's good practice to update this package.json file's main field to be your main server file, so set it to be server/server.js!
+Your application will work regardless, but it's good practice to update the root package.json file's main field to be your main server file, so set it to be server/server.js! To start the your client and server, from the the root and in your CLI use `npm run develop`
 
 
 ## Authors
