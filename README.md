@@ -46,6 +46,8 @@ Software download
   <br>
 
 ## Usage
+* The snapshot 21.3 and 21.4 (tested) required at the root, `npm i --force` to install the node modules and pass the errors. server now running and once again thoughts are displaying. Things broker after install concurently, thoughts would no longer display.
+
 * To start the server in your CLI enter `npm run watch`
 * To start the cilent in your CLI enter `npm run start`
 * In your URL, go to `localhost:3001/grapchql` to acess your Playground interface
