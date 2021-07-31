@@ -30,7 +30,7 @@ Install in your terminal:
   <br>
 * Root: `npm init`, #install concurrently library as a dependency for development environment only `npm install -D concurrently`. We can use the concurrently package to run multiple processes, or servers, from a single command line interface. Notice the -D flag in the command. That instructs that the dependency listed should be only installed in a development environment and not used in production. This will keep the overall node_modules folder size a bit smaller for production, which makes the application take up less space!
   <br>
-* 
+* client side install: `npm install react-router-dom`
   <br>
 * 
   <br>
@@ -67,7 +67,6 @@ The install script is interesting, as it's already a built-in script that works 
 Last, we have the seed script, which will navigate to the server directory and seed the database using the npm run seed command. This will be useful if we ever want to seed the database in a production environment, which we'll touch on later.
 
 Your application will work regardless, but it's good practice to update the root package.json file's main field to be your main server file, so set it to be server/server.js! To start the your client and server, from the the root and in your CLI use `npm run develop`
-
 
 ## Authors
 
