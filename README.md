@@ -32,7 +32,7 @@ Install in your terminal:
   <br>
 * client side install: `npm install react-router-dom`
   <br>
-* 
+* Client side: `npm install jwt-decode`
   <br>
 * 
   <br>
