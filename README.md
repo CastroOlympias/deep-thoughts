@@ -30,7 +30,7 @@ Install in your terminal:
   <br>
 * Root: `npm init`, #install concurrently library as a dependency for development environment only `npm install -D concurrently`. We can use the concurrently package to run multiple processes, or servers, from a single command line interface. Notice the -D flag in the command. That instructs that the dependency listed should be only installed in a development environment and not used in production. This will keep the overall node_modules folder size a bit smaller for production, which makes the application take up less space!
   <br>
-* client side install: `npm install react-router-dom`
+* Client side install: `npm install react-router-dom`
   <br>
 * Client side: `npm install jwt-decode`
   <br>
