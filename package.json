@@ -7,17 +7,17 @@
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "seed": "cd server && npm run seed",
+    "install": "cd server && npm i && cd ../client && npm i",
     "heroku-postbuild": "cd client && npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^7.0.0",
+    "dotenv": "^15.0.0",
     "if-env": "^1.0.4"
-  },
-  "devDependencies": {
-    "concurrently": "^5.1.0"
   }
 }

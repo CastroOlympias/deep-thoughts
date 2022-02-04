@@ -1,7 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { ApolloProvider } from '@apollo/react-hooks';
-import ApolloClient from 'apollo-boost';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -23,29 +22,30 @@ const client = new ApolloClient({
       }
     });
   },
-  uri: '/graphql'
+  uri: '/graphql',
+  cache: new InMemoryCache()
 });
 
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Router>
+      <BrowserRouter>
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />
           <div className="container">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/signup" component={Signup} />
-              <Route exact path="/profile/:username?" component={Profile} />
-              <Route exact path="/thought/:id" component={SingleThought} />
+            <Routes>
+              <Route path="/" element={<Home/>} />
+              <Route path="/login" element={<Login/>} />
+              <Route path="/signup" element={<Signup/>} />
+              <Route path="/profile/:username?" element={<Profile/>} />
+              <Route path="/thought/:id" element={<SingleThought/>} />
 
-              <Route component={NoMatch} />
-            </Switch>
+              <Route element={<NoMatch/>} />
+            </Routes>
           </div>
           <Footer />
         </div>
-      </Router>
+      </BrowserRouter>
     </ApolloProvider>
   );
 }
