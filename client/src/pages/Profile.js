@@ -1,11 +1,11 @@
 import React from 'react';
-import { Redirect, useParams } from 'react-router-dom';
+import { Navigate , useParams } from 'react-router-dom';
 
 import ThoughtForm from '../components/ThoughtForm';
 import ThoughtList from '../components/ThoughtList';
 import FriendList from '../components/FriendList';
 
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useQuery, useMutation } from '@apollo/client'
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import { ADD_FRIEND } from '../utils/mutations';
 import Auth from '../utils/auth';
@@ -20,12 +20,12 @@ const Profile = props => {
 
   const user = data?.me || data?.user || {};
 
-  // redirect to personal profile page if username is yours
+  // Navigate  to personal profile page if username is yours
   if (
     Auth.loggedIn() &&
     Auth.getProfile().data.username === userParam
   ) {
-    return <Redirect to="/profile" />;
+    return <Navigate to="/profile" replace={true} />;
   }
 
   if (loading) {
